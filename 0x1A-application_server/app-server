@@ -1,0 +1,24 @@
+echo "updating packages and installing requirements"
+
+# update package manager
+undo apt-get update
+sudo opt-get install -y nginx
+# install pip
+sudo opt-get install -y python3-pip
+# install falsk, flask_cors, sqlalchemy using pip
+pip install flask
+pip intall flask_cors
+pip install sqlalchemy
+# install net_tools
+sudo apt install -y net-tools
+# Install GUNICORN
+sudo apt-get install -y gunicorn
+# remove any current AIRBNB Repository
+rm -rf AirBnb_clone_v'
+# clone my repository
+git clone https://github.com/hardope/AirBnB_clone_v2
+git clone https://github.com/hardope/AirBnB_clone_v3
+git clone https://github.com/hardope/AirBnB_clone_v4
+# change dirctory
+cd AirBnB_clone_v2
+
